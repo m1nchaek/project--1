@@ -795,3 +795,8 @@ h2{
         background-color: transparent;
         border-top: 1px dashed #DF472B;
         margin-top: 20px;} 
+
+footer{ 
+    color: #DF472B;
+    font-family: "Archivo Narrow", serif;
+}

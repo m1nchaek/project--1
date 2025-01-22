@@ -2,20 +2,34 @@
     background-color: #EDE7DB; 
 }
 
+h1{ 
+    font-weight: 45;
+
+}
+
 .animation-one { 
-    font-size:70px ;
+    font-size: 80px ;
     font-family: "Vina Sans", serif;
     color: #DF472B;
+    background-color: transparent;
     letter-spacing: 2px;
-    margin-left : 25px; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left : 380px; 
+    z-index: 2;
+
 }
 .animation-two { 
-    font-size:70px ;
+    font-size: 80px ;
     font-family: "Vina Sans", serif;
+        background-color: transparent;
     color: #DF472B;
-    margin-top: 130px;
+    margin-top: 100px;
     letter-spacing: 2px;
-    margin-left : 25px; 
+    z-index: 2; 
+    margin-left :380px; 
+   
+
 }
 
 h3.about a {
@@ -116,21 +130,22 @@ a{
 .animation-one {
             position: absolute;
             top: 0;
-            font-weight: bold;
-            animation: moveToBottom 2s ease-in-out forwards;}
+            font-weight: 350;
+                        animation: moveToBottom 2s ease-in-out forwards;}
 .animation-two {
             position: absolute;
             top: 0;
-            font-weight: bold;
+            font-weight: 350;
             animation: moveToBottom 2s ease-in-out forwards;}
 @keyframes moveToBottom {
         0% {
-        top: 5%;
+        top: 2%;
         opacity: 1;}
         
         100% {
-        top: 45%;  
+        top: 10%;  
         opacity: 1;}} 
+
 
 .content-wrapper{ 
     display: flex;
@@ -142,10 +157,84 @@ a{
     justify-content: flex-end; /* Distribute space between elements */
     margin-top: 25%;}
 
-p{ 
+
+.background-rectangle-one {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  border-radius : 20px; 
+  width : 80%; 
+  height: 70%;
+  background-color: #A3B9BB; 
+  z-index: 0; 
+  opacity : 30%; 
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+.background-rectangle-two {
+    position: absolute;
+    top: 130px;
+    left: 1450px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width : 200px;
+    height: 70px;
+    background-color: #A3B9BB; 
+    z-index: 0; 
+    opacity : 50%; 
+  }
+
+.text{ 
+    position: relative;
+    z-index : 2; 
+    width : 600px; 
+    bottom: 220px; 
+    right : 80px; 
+    height: auto;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Archivo Narrow", serif;
+    background-color: transparent;
+}
+
+.animated-text {
+    position: relative;
+    background-color: transparent;
+    animation: moveText 2s ease-in-out; } 
+
+  
+  @keyframes moveText {
+    0% {
+      transform: translateY(30%); 
+    }
+   
+  }
+
+#caption{ 
     font-family: "Archivo Narrow", serif;
     font-size : 15px; 
-
     color: #1B271E;
+    background-color: transparent;
+    margin: 0; 
+    padding:0;
+}
 
+
+.images{ 
+    display: flex ;
+    flex-direction: column;
+    margin-top: 70px; 
+    height: 80vh;
+    width: 350px; 
+    overflow-y :scroll; 
+    position: absolute; 
+    z-index : 2; 
+}
+
+img{ 
+    width: 330px; 
+    height : 400px; 
 }
